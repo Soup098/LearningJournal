@@ -1,18 +1,57 @@
-main{
-
+body{
+    margin: auto;
+    max-width: 960px;
 }
-
-.blog-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(412px , 1fr))
+.flex{
+    display: flex;
 }
-.post{
+/* * * * * * * * */
+/* Header Styles */
+/* * * * * * * * */
+header{
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-between;
     border: 1px solid black;
-    width: 100px;
-    height: 100px;
-
+}
+.logo{
+    align-items: center;
+}
+.logo-img{
+    width: 3em;
+    height: 3rem;
+}
+.menu{
+    margin-top: 1.5rem;
+}
+a,
+a:hover,
+a:focus,
+a:visited,
+a:active{
+    color: black;
+    text-decoration: none;
+}
+.menu-item{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    background-color: lightgray;
+    margin: .2rem;
+    border-radius: 5px;
+    list-style: none;
+    font-style: none;
+    padding: .5rem;
+}
+.menu-item:hover{
+    transform: scale(1.075);
 }
 
-img{
-    width: 100%;
+/* * * * * * * */
+/* Hero Styles */
+/* * * * * * * */
+
+.hero{
+    background-image: url(images/OBI.jpg);
+    /* background: fixed; */
+    height: 30rem;
 }
