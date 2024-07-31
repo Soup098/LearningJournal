@@ -79,8 +79,11 @@ img{
     box-shadow: 0px 0px 8px 1px lightgray;
     
 }
+.post:hover{
+    transform: scale(1.025);
+}
 .post img{
-    height: auto;
+    height: 12rem;
     width: 100%;
     object-fit: cover;
     margin-bottom: 15px;
@@ -112,4 +115,8 @@ img{
 
 .view-more{
     justify-content: center;
+    text-decoration: underline;
+}
+.view-more:hover{
+    transform: scale(1.05)
 }
