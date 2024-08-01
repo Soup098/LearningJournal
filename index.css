@@ -1,6 +1,6 @@
 body{
     margin: auto;
-    max-width: 960px;
+    max-width: 1085px;
     background-color: whitesmoke;
     font-family: "Source Sans 3", sans-serif;
 }
@@ -70,9 +70,11 @@ img{
     justify-content: center;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    padding: 40px;
+    gap: 25px;
 }
 .post{
-    margin: 25px;
+    
     overflow: hidden;
     /* border: 1px solid black; */
     border-radius: 5px;
@@ -120,3 +122,5 @@ img{
 .view-more:hover{
     transform: scale(1.05)
 }
+
+/* Add media quaries to wrap posts to make the website responsive */
