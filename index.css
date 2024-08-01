@@ -1,3 +1,6 @@
+html{
+    background-color: #202020;
+}
 body{
     margin: auto;
     max-width: 1085px;
@@ -121,6 +124,16 @@ img{
 }
 .view-more:hover{
     transform: scale(1.05)
+}
+
+/* footer styles */
+footer{
+    flex-direction: column;
+    align-items: center;
+    line-height: 0%;
+    margin: 0;
+    color: white;
+    background-color:#202020;
 }
 
 /* Add media quaries to wrap posts to make the website responsive */
