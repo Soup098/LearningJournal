@@ -10,6 +10,9 @@ body{
 .flex{
     display: flex;
 }
+.outline{
+    text-shadow: 1px 1px 10px black;
+}
 /* * * * * * * * */
 /* Header Styles */
 /* * * * * * * * */
@@ -54,15 +57,26 @@ a:active{
 /* Hero Styles */
 /* * * * * * * */
 
-.hero{
+.hero-container{
     /* background: fixed; */
     height: 30rem;
+    position: relative;
+    color: whitesmoke;
 }
 
 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+.text-container{
+    position: absolute;
+    max-width: 600px;
+    bottom: 10px;
+    text-align: left;
+    line-height: 15px;
+    margin-left: 50px;
+    margin-bottom: 50px
 }
 
 /* * * * * * *  */
@@ -77,7 +91,6 @@ img{
     gap: 25px;
 }
 .post{
-    
     overflow: hidden;
     /* border: 1px solid black; */
     border-radius: 5px;
@@ -126,6 +139,28 @@ img{
     transform: scale(1.05)
 }
 
+/* Bio styles */
+.bio{
+    margin: 50px;
+}
+.bio-text-container,
+.story-text-container{
+    margin-left: 50px;
+}
+.bio-img{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 100px;
+    box-shadow: 0px 0px 2px black;
+}
+.blog-container-bio{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 40px;
+    gap: 25px;
+}
 /* footer styles */
 footer{
     flex-direction: column;
